@@ -6,6 +6,7 @@
 	export let name;
 	export let greeting;
 	const capitalisedGreeting = greeting[0].toUpperCase() + greeting.slice(1);
+	// const OOO = 'static/gone-fishing.png'
 </script>
 
 <main>
@@ -19,10 +20,10 @@
 	</div>
 
 	<div class='artboard'>
-		<Jeremy ref="uglyBox"/>
-		<Alvin  ref="uglyBox"/>
-		<Amelia ref="uglyBox"/>
-		<Will ref="uglyBox"/>
+		<Jeremy ref="uglyBox" />
+		<Alvin  ref="uglyBox" goneFishin/>
+		<Amelia ref="uglyBox" sick/>
+		<Will ref="uglyBox" goneFishin/>
 	</div>
 	
 </main>
@@ -60,8 +61,9 @@
 	:global([ref=uglyBox]){
 		flex: 49%;
 		border: 4px dotted rgb(251, 235, 0);
-		height: 400px;
+		height: auto;
 	}
+
 
 	.comic-sans {
 		font-family: "Comic Sans MS", "Comic Sans", cursive;
